@@ -82,7 +82,9 @@ setTimeout( function() {
     
     function renderTracks(tracks) {
       $("#popup").append(mockedHtmlForTracks);
-      
+      $("#complete-import").click(function() {
+        $("#dialog").hide();
+      })
     }
     
     $(".playlist-item-very-unique").click(function(event){
@@ -336,9 +338,8 @@ setTimeout( function() {
     <div id="DndDescribedBy-2" style="display: none;"> To pick up a draggable item, press the space bar. While dragging, use the arrow keys to move the item. Press space again to drop the item in its new position, or press escape to cancel. </div>
     <div id="DndLiveRegion-2" role="status" aria-live="assertive" aria-atomic="true" style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(100%); white-space: nowrap;"></div>
   </div>
-  <music-button id="import-spotify" size="medium" role="button" aria-disabled="false" tabindex="0" variant="solid" refinement="none" class="hydrated">Import Playlist</music-button>
+  <music-button id="complete-import" size="medium" role="button" aria-disabled="false" tabindex="0" variant="solid" refinement="none" class="hydrated" style="margin-top:16px">Done</music-button>
 </music-container>
-  
 `
 }, 2000)
 

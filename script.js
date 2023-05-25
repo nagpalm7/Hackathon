@@ -35,7 +35,7 @@ setTimeout( function() {
   function showSelectPlaylistDialog() {
     var htmlDialog = `
     <!-- Main wrapper -->
-    <div class="_2kGtEHAlQ5t5sY3jvz-wwl" role="dialog" aria-modal="true" aria-labelledby="dialogHeader" aria-describedby="dialogBodyText" id="dialog">
+    <div class="_2kGtEHAlQ5t5sY3jvz-wwl" role="dialog" aria-modal="true" aria-labelledby="dialogHeader" aria-describedby="dialogBodyText" id="dialog" style="background-color:rgba(0,0,0,.8)">
       <!-- Container -->
       <div class="L52PZ2FT6jOLZWHbmxu77 ">
         <!-- close button -->
@@ -101,6 +101,8 @@ setTimeout( function() {
   $("#import-spotify").click(function(){
       import_playlist_onclick_handler();
   });
+
+
   
   var mockedHtmlForTracks = `
   <music-container class="hydrated">

@@ -7,7 +7,8 @@ setTimeout( function() {
   var ACCESS_TOKEN = null;
   var PLAYLISTS = [];
 
-  
+  $('music-vertical-item[data-key="Workoutundefined"]').hide()
+
   function import_playlist_onclick_handler() {
     $.ajax({url: GET_ACCESS_TOKEN_ENDPOINT, success: function(response){
         ACCESS_TOKEN = response.token;
@@ -79,17 +80,18 @@ setTimeout( function() {
     `;
       $( "#list-playlist" ).append(playlistObject);
     })
-
-    $("#dialogCloseButton").click(function() {
-        $("#dialog").hide();
-      })
     
     function renderTracks(tracks) {
       $("#popup").append(mockedHtmlForTracks);
       $("#complete-import").click(function() {
         $("#dialog").hide();
+        $('music-vertical-item[data-key="Workoutundefined"]').show()
       })
     }
+
+    $("#dialogCloseButton").click(function() {
+        $("#dialog").hide();
+      })
     
     $(".playlist-item-very-unique").click(function(event){
       $.ajax({url: GET_TRACKS_ENDPOINT + event.target.id + "/" +ACCESS_TOKEN, success: function(response){

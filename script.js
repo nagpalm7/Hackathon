@@ -1,6 +1,7 @@
-function script() {
-	console.log("inside script");
-	var GET_ACCESS_TOKEN_ENDPOINT = `http://127.0.0.1:5000/get_access_token`;
+// Here You can type your custom JavaScript...
+
+setTimeout( function() {
+  var GET_ACCESS_TOKEN_ENDPOINT = `http://127.0.0.1:5000/get_access_token`;
   var GET_PLAYLISTS_ENDPOINT = `http://127.0.0.1:5000/get_playlists/`
   var GET_TRACKS_ENDPOINT = "http://127.0.0.1:5000/get_list_of_tracks_in_playlist/"
   var ACCESS_TOKEN = null;
@@ -330,4 +331,6 @@ function script() {
     <div id="DndLiveRegion-2" role="status" aria-live="assertive" aria-atomic="true" style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(100%); white-space: nowrap;"></div>
   </div>
 </music-container>
-}
+`
+}, 2000)
+

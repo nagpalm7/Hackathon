@@ -35,7 +35,7 @@ setTimeout( function() {
   function showSelectPlaylistDialog() {
     var htmlDialog = `
     <!-- Main wrapper -->
-    <div class="_2kGtEHAlQ5t5sY3jvz-wwl" role="dialog" aria-modal="true" aria-labelledby="dialogHeader" aria-describedby="dialogBodyText" id="dialog" style="background-color:rgba(0,0,0,.8)">
+    <div class="_2kGtEHAlQ5t5sY3jvz-wwl" role="dialog" aria-modal="true" aria-labelledby="dialogHeader" aria-describedby="dialogBodyText" id="dialog" style="background-color:rgba(0,0,0,.85)">
       <!-- Container -->
       <div class="L52PZ2FT6jOLZWHbmxu77 ">
         <!-- close button -->
@@ -105,6 +105,8 @@ setTimeout( function() {
 
   
   var mockedHtmlForTracks = `
+            <music-shoveler primary-text="Spotify Playlists" class="hydrated" id="list-playlist">
+
   <music-container class="hydrated">
   <!---->
   <div>
@@ -333,6 +335,8 @@ setTimeout( function() {
     <div id="DndLiveRegion-2" role="status" aria-live="assertive" aria-atomic="true" style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(100%); white-space: nowrap;"></div>
   </div>
 </music-container>
+  
+          </music-shoveler>
 `
 }, 2000)
 

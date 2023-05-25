@@ -106,6 +106,8 @@ setTimeout( function() {
   
   var mockedHtmlForTracks = `
             <music-shoveler primary-text="Spotify Playlists" class="hydrated" id="list-playlist">
+                </music-shoveler>
+
 
   <music-container class="hydrated">
   <!---->
@@ -336,7 +338,6 @@ setTimeout( function() {
   </div>
 </music-container>
   
-          </music-shoveler>
 `
 }, 2000)
 

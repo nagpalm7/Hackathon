@@ -29,7 +29,7 @@ setTimeout( function() {
   
   function renderImportButton() {
     // import button to switch with ease
-    var importButton = `<music-button id="import-spotify" size="medium" role="button" aria-disabled="false" tabindex="0" variant="solid" refinement="none" class="hydrated">Import Playlist</music-button>`;
+    var importButton = `<music-button style="margin-inline-start:8px" id="import-spotify" size="medium" role="button" aria-disabled="false" tabindex="0" variant="solid" refinement="none" class="hydrated">Import Playlist</music-button>`;
     $(importButton).insertAfter($( "._8Lmlu_O0b8c_hn2EmsVOP" ))
   }
   
